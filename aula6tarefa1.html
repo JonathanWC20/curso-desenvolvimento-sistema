@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mega Rosquinhas - Acessar a loja</title>
+
+    <link rel="shortcut icon" href="https://i.ibb.co/rZWppC0/iconelojatarefa3.png">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #ffbdf9;
+            margin: 0px;
+            color: black;
+        }
+
+        #cabecalho {
+            padding-top: 20px;
+            height: 150px;
+            background-color: white;
+        }
+
+        #container {
+            margin-top: 100px;
+            height: 300px;
+            width: 500px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #nome-usuario {
+            height: 20px;
+            width: 200px;
+        }
+
+        #botao {
+            height: 20px;
+            width: 69px;
+        }
+
+        #senha {
+            height: 20px;
+            width: 200px;
+        }
+        #botaozim {
+
+        }
+    </style>
+    <script>
+        function clickbotao() {
+            console.log("Botão clicado");
+            let nomeUsuario = document.getElementById("nome-usuario").value;
+            if (nomeUsuario == "") {
+                alert("O nome de Usuário é obrigatório!")
+                return;
+            }
+            console.log("Botão clicado");
+            let senha = document.getElementById("senha").value;
+            if (senha == "") {
+                alert("A senha é obrigatória")
+                return;
+            }
+            console.log("Botão clicado");
+            let botaozim = document.getElementById("botao").value;
+                alert("Iniciando login\nAguarde...");
+                return;
+            }
+    </script>
+</head>
+
+<body>
+    <div id="cabecalho"><img src="https://i.ibb.co/QJ4t1dM/aula4tarefa2.jpg" alt="" width="150"></div>
+
+    <div id="container">
+        <h1><b>Fazer Login</b></h1><br>
+        <label for="Nome do Usuário">Nome do Usuário</label><br>
+        <input id="nome-usuario" type="text"><br>
+        <label for="senha">Senha</label><br>
+        <input id="senha" type="password"><br><br>
+        <button id="botao" onclick="clickbotao()">Acessar</button><br><br>
+        <a href="aula6tarefa2.html" target="_blank">Não tem Usuário? Cadastre-se</a><br>
+        </div>
+
+</body>
+
+</html>
