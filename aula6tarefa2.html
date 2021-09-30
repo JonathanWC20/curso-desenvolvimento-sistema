@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Rosquinhas - Cadastro na loja</title>
+
+    <link rel="shortcut icon" href="https://i.ibb.co/rZWppC0/iconelojatarefa3.png" type="imagem/png">
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffbdf9;
+            margin: 0px;
+        }
+        #cabecalho {
+            height: 180px;
+            background-color: white;
+            padding-top: 15px;
+            
+        }
+        #container {
+            margin-top: 100px;
+            height: 400px;
+            width: 500px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #nome-usuario {
+            height: 20px;
+            width: 200px;
+        }
+        #botao {
+            height: 20px;
+            width: 69px;
+        }
+        #senha {
+            height: 20px;
+            width: 200px;
+        }
+        #email {
+            height: 20px;
+            width: 200px;
+        }
+        #confirmar {
+            height: 20px;
+            width: 200px;
+        }
+
+    </style>
+    <script>
+        function clickbotao (){
+            console.log("Botão clicado");
+            let nomeUsuario = document.getElementById("nome-usuario").value;
+            if (nomeUsuario == "") {
+                alert("O nome de Usuário é obrigatório!");
+                return;
+            }
+
+            console.log("Botão clicado");
+            let senha = document.getElementById("senha").value;
+            if (senha == "") {
+                alert("A senha é obrigatória!");
+                return;
+            }
+
+            console.log("Botão clicado");
+            let confirmar = document.getElementById("confirmar").value;
+            if (senha == "") {
+                alert("Confirme sua senha!");
+                return;
+            }
+
+            console.log("Botão clicado");
+            let email = document.getElementById("email").value;
+            if (email == "") {
+                alert("Email e obrigatório");
+                return;
+            }
+            console.log("Botão clicado");
+            let botao = document.getElementById("botao").value;
+            if (botao == "") {
+                alert("Cadastro Confirmado!\nAguarde...");
+                return;
+            }
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    
+    <div id="cabecalho"><img src="https://i.ibb.co/QJ4t1dM/aula4tarefa2.jpg" alt="" width="150"></div>
+
+    <div id="container">
+        <h1><b>Fazer Login</b></h1><br>
+        <label for="Nome do Usuário">Nome do Usuário</label><br>
+        <input id="nome-usuario" type="text"><br>
+        <label for="email">Email</label><br>
+        <input id="email" type="text"><br>
+        <label for="senha">Senha</label><br>
+        <input id="senha" type="password"><br>
+        <label for="senha">Confirmar senha</label><br>
+        <input id="confirmar"><br><br>
+        <button id="botao" onclick="clickbotao()"><a href="aula6tarefa1.html" target="_blank">acessar</a></button><br><br>
+        <a href="aula6tarefa1.html" target="">Já tem usuário? Acesse</a><br>
+    </div>
+    
+</body>
+
+</html>
