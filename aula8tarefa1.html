@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora em Javascript</title>
+
+    <style>
+        body {
+            margin: 0px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #cabecalho {
+            background-color: white;
+            height: 200px;
+            padding-top: 20px;
+        }
+        #conteudo {
+            background-color: #d3d3d3;
+            padding-bottom: 370px;
+        }
+        #primeirob {
+        
+        }
+        #segundob {
+
+        }
+        #resultado {
+            color: blue;
+            font-size: 60px;
+        }
+    </style>
+    <script>
+        function calcular(){
+            console.log("calcular")
+            let valorPrimeiroBotao = document.getElementById("primeirob").value;
+            let valorSegundoBotao = document.getElementById("segundob").value;
+
+            let soma = parseInt(valorPrimeiroBotao) + parseInt(valorSegundoBotao);
+            document.getElementById("resultado").innerHTML = soma;
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="cabecalho"><img src="https://i.ibb.co/JHysTz9/calculator-logo.png" width="200px" height="150px"></div>
+    <div id="conteudo">
+        <br>
+        <input id="primeirob" type="text">
+        <br>
+        <br>
+        <h1>Somar</h1>
+        <br>
+        <input id="segundob" type="text">
+        <br>
+        <br>
+        <br>
+        <button id="botao" onclick="calcular()">Calcular</button>
+        <br>
+        <p><b>Resultado:</b></p>
+        <br>
+        <p id="resultado"></p>
+    </div>
+    
+</body>
+
+</html>
