@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imagens/LOGO-JWC.png">
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="imagens/calc-icon.png" alt="">
+        </picture>
+        <h1>Contador</h1>
+    </header>
+<div class="margin">
+    <section>
+
+        <code>
+            <h2>Bora contar</h2>
+            <label class="quebra-linha">
+                Inicio:<input id="ini" type="number"placeholder="Número inicial...">
+            </label>
+            <label class="quebra-linha">
+                Fim:<input id="fim" class="fim" type="number"placeholder="Número final...">
+            </label>
+            <label class="quebra-linha">
+                Passos:<input id="pas" type="number"placeholder="Quantos números ira pular...">
+            </label>
+        <button onclick="verificar()">Verificar</button>
+        <div>
+            <p id="res"> Resultado :</p>
+        </div>
+        <label class="quebra-linha">
+            <button onclick="limpar()">Limpar</button>
+        </label>
+    </code>
+    </section>
+</div>
+    <footer>
+        &copy;JonathanWC
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
