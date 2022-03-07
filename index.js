@@ -1,35 +1,19 @@
-verificar = () =>{
-    let ini = document.getElementById("ini").value;
-    let fim = document.getElementById("fim").value;
-    let pas = document.getElementById("pas").value;
-    let res = document.getElementById("res");
+verificar = () => {
+    let numero = document.getElementById("numero").value;
+    let res = document.getElementById("resultado");
 
-    if(ini.length == 0 || fim.length == 0 || pas.length == 0) {
-        res.innerHTML = `<p>Impossivel calcular.<br>Revise os dados!</p>`
-    }else{
-        let i = parseInt(ini);
-        let f = parseInt(fim);
-        let p = parseInt(pas);
+    if (numero.length == 0) {
+        alert("[ERRO] Impossivel calcular.") 
 
-        if(p <= 0){
-            alert("Passo invalido.\nSubstituindo por 1")
-            p = 1
-        }
-        if(i <= f){
-            for(let c = i ; c <= f ; c += p){
-                res.innerHTML += `${c},`
-            }
-        }
-        if(i >= p){
-            for( let c = i ; c >= f ; c -= p){
-                res.innerHTML += `${c},`
-            }
-        }
-        res.value=""//tentei zerar o res dps de usar, nao deu muito certo kkkkk
+    }else {
+        let num = parseInt(numero);
+        res.innerHTML = ""
+        for (let c = 1; c <= 10; c++){
+            let item = document.createElement("option");
+            item.text = `${num} x ${c} = ${num * c}`
+            res.appendChild(item)
+        } 
     }
-}
-limpar = () => {
-    let res = document.querySelector("#res");
-    let p = document.querySelector("#res p");
-    res.removeChild(p);
+    num.focus() // tentei focar no input num
+                // nao deu certo
 }
