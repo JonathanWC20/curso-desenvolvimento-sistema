@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Timer com Callbacks</title>
 
-    <title>Tabuada</title>
-    <Link rel="stylesheet" href="index.css"></Link>
-    <link rel="shortcut icon" href="imagens/LOGO-JWC.png" type="image/icon">
-
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
-
 <body>
-
     <header>
-        <h1>Tabuada</h1>
         <picture>
-            <img src="imagens/calc-icon.png" alt="">
+            <img src="https://i.ibb.co/d5Ldvvp/timer.png">
         </picture>
     </header>
     <section>
-        <div>
-            <p>Numero :
-                <input type="number" id="numero" placeholder="">
+        <label>
+            Segundos:<input class="focus" id="numerico" type="number" placeholder="">
+        </label>
+            <button onclick="verificar()"><strong>Iniciar</strong></button>
+            <p id="resultado">
+
             </p>
-            <button class="botao" onclick="verificar()">Verificar</button>
-        </div>
-        <p>
-            <select id="resultado">
-                <option>Digite o numero a cima</option>
-            </select>
-        </p>
-        <div>
-
-        </div>
     </section>
-    <footer>
-        <p>&copy; JonathanWC</p>
-    </footer>
-
-    <script src="index.js"></script>
-
 </body>
-
 </html>

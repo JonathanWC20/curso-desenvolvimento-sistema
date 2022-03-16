@@ -1,19 +1,19 @@
 verificar = () => {
-    let numero = document.getElementById("numero").value;
-    let res = document.getElementById("resultado");
 
-    if (numero.length == 0) {
-        alert("[ERRO] Impossivel calcular.") 
+    let number = document.getElementById("numerico").value;
+    let resultado = document.getElementById("resultado");
+    let num = parseInt(number);
 
-    }else {
-        let num = parseInt(numero);
-        res.innerHTML = ""
-        for (let c = 1; c <= 10; c++){
-            let item = document.createElement("option");
-            item.text = `${num} x ${c} = ${num * c}`
-            res.appendChild(item)
-        } 
+    resultado.innerHTML = ""
+    resultado.innerHTML += `Tempo: ${--num}`
+    
+    if(num <= 0){
+        resultado.innerHTML = "Tempo esgotado!";
+        clearInterval(pararCron);
     }
-    num.focus() // tentei focar no input num
-                // nao deu certo
+
+}
+
+pararCron = () => {
+    let intervalo = setInterval(verificar,1000);
 }

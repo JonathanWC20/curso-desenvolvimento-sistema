@@ -1,54 +1,46 @@
 body{
-    margin:0;
-    background: #6262ff;
-    font:normal 15pt arial;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New' courier, monospace;
+    text-align: center;
+    font-size: 20px;
+    background: #d3d3d3;
 }
 header{
-    color:white;
-    text-align:center;
+    background: white;
 }
 section{
-    background:white;
-    border-radius:10px;
-    padding:15px;
-    width:400px;
-    margin: auto; /* margin: auto; centralizar com width */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397); /*deixar sombra */
-    text-align: center;
+    background: #d3d3d3;
 }
 footer{
-    color:white;
-    text-align:center;
-    font-family:italic;
+
 }
 img{
-    height: 100px;
-    margin: 10px;
+    height: 200px;
 }
-h1{
-    margin: 10px;
+input{
+    height: 20px;
+    border: 1px;
+    margin-top: 15px;
 }
-select{
-    background: #6262ff;
-    color: white;
-    border: 0px;
+label{
+    display: block;
+}
+button{
+    font-family: courier;
+    margin-top: 15px;
     height: 25px;
-}
-select:hover{
-    background: white;
-    color: black;
-}
-.botao {
     width: 100px;
-    height: 30px;
-    background: #6262ff;
-    border: 0px;
-    border-radius: 5px;
+    border: 1px;
+    border-radius: 10px;
     cursor: pointer;
-    color: white;
+    box-shadow: 5px 5px 15px rgb(119, 119, 119);
 }
-.botao:hover{
-    background: white;
-    color: #6262ff;
+button:hover{
+    background: #d4d4d4;
     transition: 1s;
+}
+p{
+   color: rgb(204, 61, 61); 
+   font-size: 30px;
 }
