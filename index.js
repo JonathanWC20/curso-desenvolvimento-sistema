@@ -1,19 +1,23 @@
+let segundos = 0;
+let intervalo;
+
 verificar = () => {
-
-    let number = document.getElementById("numerico").value;
     let resultado = document.getElementById("resultado");
-    let num = parseInt(number);
 
-    resultado.innerHTML = ""
-    resultado.innerHTML += `Tempo: ${--num}`
+    resultado.innerHTML = `Tempo: ${--segundos}`
     
-    if(num <= 0){
+    if(segundos <= 0){
         resultado.innerHTML = "Tempo esgotado!";
-        clearInterval(pararCron);
+        clearInterval(intervalo);
     }
 
 }
 
-pararCron = () => {
-    let intervalo = setInterval(verificar,1000);
+iniciarCronometro = () => {
+
+    let number = document.getElementById("numerico").value;
+    
+    segundos = parseInt(number);
+
+    intervalo = setInterval(verificar,1000);
 }
