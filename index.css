@@ -1,46 +1,41 @@
 body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New' courier, monospace;
+    margin: 0px;
+    font-family: arial;
+    background: lightcoral;
     text-align: center;
+    width: auto;
     font-size: 20px;
-    background: #d3d3d3;
-}
-header{
-    background: white;
 }
 section{
-    background: #d3d3d3;
+    background: white;
+    height: auto;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(5, 5, 5, 0.623);
 }
-footer{
-
-}
-img{
-    height: 200px;
-}
-input{
-    height: 20px;
-    border: 1px;
-    margin-top: 15px;
+div{
+    padding: 50px;
+    margin-top: 200px;
 }
 label{
-    display: block;
+    margin-top: 20px;
+}
+h1{
+    margin: 0px;
 }
 button{
-    font-family: courier;
-    margin-top: 15px;
-    height: 25px;
+    color: white;
+    height: 30px;
     width: 100px;
-    border: 1px;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 5px 5px 15px rgb(119, 119, 119);
+    border-radius: 4px;
+    border: none;
+    background: black;
 }
 button:hover{
-    background: #d4d4d4;
-    transition: 1s;
+    cursor: pointer;
+    background: rgb(58, 58, 58);
 }
-p{
-   color: rgb(204, 61, 61); 
-   font-size: 30px;
+.quebra-linha{
+    display: block;
 }

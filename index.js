@@ -1,23 +1,38 @@
-let segundos = 0;
-let intervalo;
+function converter(resposta) {
+    return resposta.json();
+}
 
-verificar = () => {
-    let resultado = document.getElementById("resultado");
-
-    resultado.innerHTML = `Tempo: ${--segundos}`
-    
-    if(segundos <= 0){
-        resultado.innerHTML = "Tempo esgotado!";
-        clearInterval(intervalo);
+function mostrarResultado(resultadoLogin, erro) {
+    if (resultadoLogin == "Email incorreto") {
+        alert("[ERRO]\nDados incorretos!")
+    }else{
+        window.location.href = "http://google.com.br";
     }
-
+    //window.location.href = "http://google.com.br";
 }
 
-iniciarCronometro = () => {
 
-    let number = document.getElementById("numerico").value;
-    
-    segundos = parseInt(number);
 
-    intervalo = setInterval(verificar,1000);
+function acessar() {
+    let email = document.getElementById("email").value;
+    let senha = document.getElementById("senha").value;
+
+    let dados = {
+        email: email,
+        senha: senha
+    };
+
+    let configuracao = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dados)
+    };
+
+    fetch('https://sjufvhlfd6.execute-api.sa-east-1.amazonaws.com/default/template-lambda-dynamo', configuracao)
+        .then(converter)
+        .then(mostrarResultado);
 }
+

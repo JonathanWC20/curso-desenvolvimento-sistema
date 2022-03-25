@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Timer com Callbacks</title>
-
+    <title>Acessar área restrita</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <script defer src="index.js"></script>
+
 </head>
 <body>
-    <header>
-        <picture>
-            <img src="https://i.ibb.co/d5Ldvvp/timer.png">
-        </picture>
-    </header>
     <section>
-        <label>
-            Segundos:<input class="focus" id="numerico" type="number" placeholder="">
-        </label>
-            <button onclick="iniciarCronometro()"><strong>Iniciar</strong></button>
-            <p id="resultado">
-
-            </p>
+        <div>
+            <code>
+            <h1>ACESSAR SISTEMA</h1>
+            <label class="quebra-linha">Email
+                <input id="email" type="text" placeholder="Email">
+            </label>
+            <label class="quebra-linha">Senha
+                <input id="senha" type="password" placeholder="Senha">
+            </label>
+            <label class="quebra-linha">
+                <button onclick="acessar()">Acessar</button>
+            </label>
+            </code>
+        </div>
     </section>
 </body>
 </html>
